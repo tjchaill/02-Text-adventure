@@ -1,0 +1,103 @@
+{
+	"START": {
+		"name": "Outskirts of desert citadel",
+        "desc": "You stand on the westward outskirts of a desert citadel. You see bustle in the streets.",
+		"exits": [{
+			"exit": "BAZAAR",
+			"target": "BAZAAR"
+		}],
+		"items": []
+    }
+    ,"BAZAAR": {
+        "name": "Bazaar",
+        "desc": "Hectic bazaar in the Western corridor of the citadel.",
+        "exits": [{
+            "exit": "ARMOURY",
+			"target": "ARMOURY"
+        }, 
+        {
+            "exit": "APOTHECARY",
+            "target": "APOTHECARY"
+        }, 
+        {
+            "exit": "TEAHOUSE",
+            "target": "TEAHOUSE"
+        }],
+        "items": []
+        },
+    "ARMOURY": {
+        "name": "ARMOURY",
+        "desc": "You are in a small but impressive armoury. Glittering swords, axes, spears, and shields line the walls. A crumudgeonly old man sits at the counter.",
+        "exits": [{
+            "exit": "OWNER'S QUARTERS",
+            "target": "OWNER'S QUARTERS"
+        },
+        {
+			"exit": "BAZAAR",
+			"target": "BAZAAR"
+		}],
+        "items":[{
+            "item": "ANCIENT SCIMITAR",
+            "desc": "An ancient scimitar leans against the counter, seemingly emanating a slight hum.",
+            "take": "The worn leather handle feels perfect in your hand. Almost as if it was made for you..."
+        }]
+        },
+    "APOTHECARY": {
+        "name": "APOTHECARY",
+        "desc": "You are in a dark, dank apothecary. With no windows, only the glow of the various elixirs lights the chamber. The smell of exotic ingredients fill the air.",
+        "exits": [{
+            "exit": "STOCKROOM",
+            "target": "STOCKROOM"
+        },
+        {
+			"exit": "BAZAAR",
+			"target": "BAZAAR"
+		}],
+        "items": [{
+            "item": "LIZARD TAIL",
+            "desc": "A lizard tail sits on the counter. You've heard this ingredient is great for health potions.",
+            "take": "The severed tail squirms in your palm. You put it in your pocket"
+        }]
+        },
+    "TEAHOUSE": {
+        "name": "TEAHOUSE",
+        "desc": "The teahouse is fragrant and filled with people. Most of them sit in hushed conversations, eyeing you suspiciously.",
+        "exits": [{
+            "exit": "KITCHEN",
+            "target": "KITCHEN"
+        },
+        {
+			"exit": "BAZAAR",
+			"target": "BAZAAR"
+		}],
+        "items": []
+    },
+    "OWNER'S QUARTERS": {
+        "name": "OWNER'S QUARTERS",
+        "desc": "The owner's room is filled to the brim with strange trinkets, but none of them seem particularly valuable...",
+        "exits": [{
+            "exit": "ARMOURY",
+            "target": "ARMOURY"
+        }],
+        "items": []
+    },
+    "STOCKROOM": {
+        "name": "STOCKROOM",
+        "desc": "The stockroom has strange ingredients and tools sealed in glass bottles. Someone would surely notice if you took anything...",
+        "exits": [{
+            "exit": "APOTHECARY",
+            "target": "APOTHECARY"
+        }],
+        "items": []
+    
+    },
+    "KITCHEN": {
+        "name": "KITCHEN",
+        "desc": "Chefs and cooks bustle around the kitchen, but you doubt you could take anything without them seeing...",
+        "exits": [{
+            "exit": "TEAHOUSE",
+            "target": "TEAHOUSE"
+        }]
+    }
+}
+
